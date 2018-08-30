@@ -1,5 +1,5 @@
-class GigsController < ApplicationController
-  before_action :set_gig, only: [:show, :update, :destroy]
+class GigsController < OpenReadController
+  before_action :set_gig, only: %i[:update, :destroy]
 
   # GET /gigs
   def index
@@ -15,7 +15,7 @@ class GigsController < ApplicationController
 
   # POST /gigs
   def create
-    @gig = Gig.new(gig_params)
+    @gig = current_user.gigs.build(gig_params)
 
     if @gig.save
       render json: @gig, status: :created, location: @gig
@@ -41,7 +41,7 @@ class GigsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_gig
-      @gig = Gig.find(params[:id])
+      @gig = current_user.gigs.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.

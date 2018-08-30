@@ -7,6 +7,7 @@ curl "http://localhost:4741/gigs" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "gig": {
+      "'"user_id"'": "'"${USER}"'",
       "'"date"'": "'"${DATE}"'",
       "'"time"'": "'"${TIME}"'",
       "'"texttime"'": "'"${TTIME}"'",
