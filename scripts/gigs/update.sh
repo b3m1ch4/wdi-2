@@ -1,4 +1,4 @@
-curl "http://localhost:4741/gigs" \
+curl "http://localhost:4741/gigs/${ID}" \
   --include \
   --request PATCH \
   --header "Content-Type: application/json" \
