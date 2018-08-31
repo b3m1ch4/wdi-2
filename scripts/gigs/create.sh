@@ -10,7 +10,8 @@ curl "http://localhost:4741/gigs" \
       "'"date"'": "'"${DATE}"'",
       "'"time"'": "'"${TIME}"'",
       "'"texttime"'": "'"${TTIME}"'",
-      "'"description"'": "'"${DESC}"'"
+      "'"description"'": "'"${DESC}"'",
+      "'"user_id"'": "'"${USER}"'"
     }
   }'
 
