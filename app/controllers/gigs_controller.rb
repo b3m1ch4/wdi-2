@@ -1,5 +1,5 @@
 class GigsController < OpenReadController
-  before_action :set_gig, only: [:update, :destroy]
+  before_action :set_gig, only: [:show, :update, :destroy]
 
   # GET /gigs
   def index
@@ -41,7 +41,7 @@ class GigsController < OpenReadController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_gig
-      @gig = current_user.gigs.find(params[:id])
+      @gig = Gig.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
