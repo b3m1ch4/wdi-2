@@ -41,7 +41,7 @@ class GigsController < OpenReadController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_gig
-      @gig = Gig.find(params[:id])
+      @gig = current_user.gigs.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
