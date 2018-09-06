@@ -4,21 +4,21 @@ that could be developed into a tool that musicians use to communicate their
 availability for gigs.
 
 ## Links
--Link to the frontend app: https://b3m1ch4.github.io/wdi-2-front/
--Link to the frontend repo: https://github.com/b3m1ch4/wdi-2-front
--Link to the backend app: https://quiet-castle-23974.herokuapp.com/
--Link to the backend repo: https://github.com/b3m1ch4/wdi-2-back
+- Link to the frontend app: https://b3m1ch4.github.io/wdi-2-front/
+- Link to the frontend repo: https://github.com/b3m1ch4/wdi-2-front
+- Link to the backend app: https://quiet-castle-23974.herokuapp.com/
+- Link to the backend repo: https://github.com/b3m1ch4/wdi-2-back
 
 ## List technologies used on backend
--Ruby on Rails
--Postgres sql
--Heroku
+- Ruby on Rails
+- Postgres sql
+- Heroku
 
 ## List unsolved problems which would be fixed in future iterations.
--Create an additional, joint resource called "bands"
--Allow band members to respond with their gig availability
--Use psql's time and time storage
--Use psql's time zone features
+- Create an additional, joint resource called "bands"
+- Allow band members to respond with their gig availability
+- Use psql's time and time storage
+- Use psql's time zone features
 
 ## Document your planning and tell a story about your development process and problem-solving strategy.
 The prompt for this project was pretty opened ended in comparison to our first
@@ -40,12 +40,12 @@ that intuition to another in an effort to troubleshoot what the problem is.
 
 ## User stories
 As a user, I expect to be able to
--signup, signin, change my password and signout
--create a gig
--view all gigs
--view a single gig
--edit a gig 
--delete a gig
+- signup, signin, change my password and signout
+- create a gig
+- view all gigs
+- view a single gig
+- edit a gig
+- delete a gig
 
 ## Link to Entity Relationship Diagram (ERD).
 https://i.imgur.com/KZJASKN.jpg
