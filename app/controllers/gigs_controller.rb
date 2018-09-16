@@ -1,4 +1,4 @@
-class GigsController < OpenReadController
+class GigsController < ProtectedController
   before_action :set_gig, only: [:show, :update, :destroy]
 
   # GET /gigs
